@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="shortcut icon" href="../assets/img/57973.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <img src="../assets/img/Banner.jpg" class="img-fluid" alt="Banner">
+            
+    </header>
+    
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="container-fluid">
+        <img class="logo" src="../assets/img/logo.png" alt="paton">
+      
+    
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                  <li><a class="dropdown-item" href="#">higiene</a></li>
+                  <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                  <li><a class="dropdown-item" href="#">Salud</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./inscripciones.html">Inscripciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./cursos.html">Cursos</a>
+             
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./turnos.html">Turnos</a>
+             
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+        <h1>Turnos</h1>
+   <main>
+    <div class="row" >
+        <form class="turnos" action="" method="get" enctype="application/x-www-form-urlencoded">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="mb-3">
+            <label for="mail" class="form-label">Mail</label>
+            <input type="email" class="form-control" id="mail" placeholder="Ingrese su mail">
+            <div class="mb-3">
+              <label for="nombremascota" class="form-label">Nombre de su mascota</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre de su mascota">
+              <div class="mb-3">
+                <label for="telefono" class="form-label">telefono</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su telefono">
+              </div>
+            </div>
+            <div class="mascota">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Seleccione su mascota
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perro</a></li>
+                <li><a class="dropdown-item" href="#">Gato</a></li>
+                
+              </ul>
+            </div>
+            <label for="start">Agende su turno</label>
+
+            <input type="date" id="start" name="trip-start"
+                  value="2022-12-27"
+                  min="2022-12-27" max="2023-03-31">
+          
+          </div>
+          <label for="appt">Agende su turno</label>
+
+    <input type="time" id="appt" name="appt"
+          min="10:00" max="18:00" required>
+
+    <small>Turnos de 10 a 18hs</small>
+
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"checked>
+      <label class="form-check-label" for="flexSwitchCheckDefault">Baño completo</label>
+      <p> Incluye baño, corte de uñas, limpieza de oídos, limpieza de lagrimales y limpieza dental</p>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Baño basico</label>
+      <p>Baño y secado </p>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDisabled">Baño hipoalergenico</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"checked>
+      <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Peluqueria completa</label>
+      <p>Corte y peinado</p>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Corte raza</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckChecked">Limpieza de lagrimales</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDisabled">Limpieza de oidost</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Limpieza dental</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Corte de uñas</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"checked>
+      <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Pulguicida</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"checked>
+      <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Perfume</label>
+    </div>
+    <div class="agendar">
+    <button type="button" class="btn btn-secondary">Agendar</button>
+  </div>
+</div>
+
+
+    </form>
+    
+    <h2>Sucursal</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13129.005005339577!2d-58.39120643376192!3d-34.64835717534868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb51bb05205b%3A0x117d65e0f0518bf0!2sPet%20Shop%20Barracas!5e0!3m2!1ses-419!2sar!4v1669782458544!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </main>
+   <aside>
+
+   </aside>
+   <footer>
+        <h3>Ambar, Perea todos los derechos reservados</h3>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
