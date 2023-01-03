@@ -4,15 +4,14 @@
     box-sizing: border-box; 
 }
 
-/*inicio*/
+
 
 .bodyindex{
     background-color:#84428C;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px 450px 1fr 100px;
-    grid-template-areas: "nav    nav    nav    nav"
-                         "header header header header"
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  450px 1fr 100px;
+    grid-template-areas: "header header header header"
                          "main    main   main   aside"
                          "footer  footer footer footer";
 
@@ -21,10 +20,9 @@
     .bodyIndex{
     background-color:#84428C;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px 450px auto auto 100px;
-    grid-template-areas: "nav    nav    nav    nav"
-                         "header header header header"
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  450px auto auto 100px;
+    grid-template-areas: "header header header header"
                          "main   main   main   main"
                          "aside  aside  aside  aside"
                          "footer footer footer footer";
@@ -41,6 +39,7 @@
     display: flex;
     justify-content:left;
     justify-content:start;
+    position: relative;
   
 }
 
@@ -54,18 +53,20 @@
 
 
 .navegador {
-    grid-area: nav;
+    grid-area: header; 
     display: flex;
     background-color: #12A6A6;
-    position: relative;
+    position:absolute;
     justify-content: center;
     top: 0;
+    height: 60px;
+    width: 100%;
 }
 
 .logo{
-    width: 55px;
-    height: 55;
-    margin: 10px;
+    width: 50px;
+    height: 50;
+    margin: 5px;
     position: absolute;
     left: 10px;
 }
@@ -304,7 +305,6 @@ h3{
     color: #F2B705;
 }
 
-/*turnos*/
 
 
 .turnos{
@@ -331,7 +331,7 @@ h3{
 
 
 
-/*productos*/
+
 .bodyProductos{
     background-color: #84428C;
 }
@@ -383,15 +383,12 @@ h3{
 }
 
 
-/*inscripciones*/
-
 .bodySinAside{
     display: grid;
     background-color:#84428C;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px 450px auto 100px;
-    grid-template-areas: "nav    nav    nav     nav"
-                         "header header header  header"
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  450px auto 100px;
+    grid-template-areas: "header header header  header"
                          "main    main   main   main"
                          "footer  footer footer footer";
 
@@ -399,18 +396,15 @@ h3{
 
 @media(max-width:768px){
     .bodySinAside{
-        grid-template-rows: 80px 450px auto 100px;
-        grid-template-areas: "nav    nav    nav    nav"
-                             "header header header header"
+        grid-template-rows:  450px auto 100px;
+        grid-template-areas:"header header header header"
                              "main   main   main   main"
                              "footer footer footer footer";
         }                
 
     }
 
-.navegador{ 
-    grid-area: nav;
-}
+
 .headerIndex{
     grid-area: header;
     padding: 100px;
@@ -423,6 +417,9 @@ h3{
     justify-content:start;
 
 
+}
+.navegador{ 
+    grid-area: header;
 }
 
 .mainIndex{
@@ -584,31 +581,27 @@ h2{
 
 
 
-/*cursos*/
-
 .bodyCursos{
     background-color: #84428C;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px 450px auto 100px;
-    grid-template-areas: "nav    nav    nav     nav"
-                         "header header header  header"
+    grid-template-rows: 450px auto 100px;
+    grid-template-areas: "header header header  header"
                          "main    main   main   main"
                          "footer  footer footer footer";
 
 }
 @media(max-width:768px){
     .bodyCursos{
-        grid-template-rows: 80px 450px auto 100px;
-        grid-template-areas: "nav    nav    nav    nav"
-                             "header header header header"
+        grid-template-rows: 450px auto 100px;
+        grid-template-areas: "header header header header"
                              "main   main   main   main"
                              "footer footer footer footer";
         }                
 
     }
 .navegador{ 
-    grid-area: nav;
+    grid-area: header;
 }
 
     
