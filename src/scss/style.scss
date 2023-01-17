@@ -1,0 +1,125 @@
+@import "mixin";
+@import "inscripciones";
+@import "reset";
+@import "navegador";
+@import "variables";
+@import "tarjeta";
+@import"headerindex";
+@import "adds";
+@import "headerturnos";
+@import "bodyturnos";
+@import "productos";
+@import "cursos";
+@import "extend";
+@import "variables";
+
+
+.bodyindex {
+    background-color: $colorvioleta;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px 1fr 100px;
+    grid-template-areas: "header header header header"
+                          "main    main   main   aside"
+                         "footer  footer footer footer"; 
+                      }
+  
+  @media (max-width: 768px) {
+    .bodyindex {
+      background-color: $colorvioleta;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows:   450px auto auto 100px;
+      grid-template-areas:  "header header header header"
+                            "main   main   main   main"
+                            "aside  aside  aside  aside"
+                            "footer footer footer footer"; 
+                            } 
+                          
+                          }
+  
+  
+  
+  
+  h1 {
+    color: $colorceleste;
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+    margin: 25px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .mainIndex {
+    grid-area: main;
+    margin-top: 80px; }
+  
+  h2 {
+    color: $colorvioleta;
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 20px;
+    font-family: 'Nunito', sans-serif; 
+   }
+  
+  
+  
+    .agendar {
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      color: $colorvioleta;
+      text-decoration: none;
+      font-size: 10px; 
+      font-family: 'Nunito', sans-serif
+    }     
+  
+  
+  
+  .footerIndex {
+    grid-area: footer; 
+  }
+  
+  @media (max-width: 768px) {
+    .footerIndex {
+      width: 100%;
+      height: 5px;
+      padding: 2px;
+      margin: 3px; }
+    h3 {
+      padding: 3%;
+      margin: 5px;
+      border: none;
+      background-color: $colorceleste;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: $coloramarillo; 
+      font-family: 'Nunito', sans-serif
+      } 
+    }
+  
+  h3 {
+    padding: 3%;
+    margin: 10px;
+    border: none;
+    background-color: $colorceleste;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: $coloramarillo; 
+    font-family: 'Nunito', sans-serif
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
