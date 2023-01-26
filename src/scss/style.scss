@@ -17,18 +17,38 @@
 .bodyindex {
     background-color: $colorvioleta;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 450px 1fr 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 450px 1100px 475px 100px;
     grid-template-areas: "header header header header"
-                          "main    main   main   aside"
-                         "footer  footer footer footer"; 
+                          "main  main   main   main"
+                          "aside aside  aside  asie"
+                          "footer  footer footer footer"; 
+
+                          .navegador {
+                            grid-area: header; 
+                          }
+                          
+                          .headerIndex {
+                            grid-area: header; 
+                          }
+                          
+                          .mainIndex {
+                            grid-area: main; 
+                          }
+                          
+                          .footer {
+                            grid-area: footer; 
+                          }
+                          
+
+                  
                       }
   
   @media (max-width: 768px) {
     .bodyindex {
       background-color: $colorvioleta;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows:   450px auto auto 100px;
       grid-template-areas:  "header header header header"
                             "main   main   main   main"
@@ -45,41 +65,79 @@
     color: $colorceleste;
     text-align: center;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 80px;
     margin: 25px;
     font-family: 'Nunito', sans-serif;
   }
+
+
+  
   
   .mainIndex {
     grid-area: main;
-    margin-top: 80px; }
+    margin-top: 80px; 
   
+
+
+  
+  .titulo__conocenos {
+          margin: 25px;
+          font-size: 40px;
+          text-align: center;
+          font-weight: normal;
+          font-family: 'Nunito', sans-serif;
+          color: $colorceleste;
+  }
+    
+  .descrip__conocenos{
+    margin: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    color: $coloramarillo;
+    
+  
+  }
+  
+  }
+
+
   h2 {
     color: $colorvioleta;
     text-align: center;
     font-weight: normal;
     font-size: 25px;
     margin: 20px;
-    font-family: 'Nunito', sans-serif; 
-   }
-  
-  
-  
-    .agendar {
-      text-align: center;
-      padding: 10px;
-      margin: 10px;
+    font-family: 'Nunito', sans-serif;
+    
+  }
+
+  h4{
+    padding: 3%;
+      margin: 5px;
       border: none;
-      border-radius: 5px;
-      color: $colorvioleta;
+      font-size: 50px;
+      text-align: center;
       text-decoration: none;
-      font-size: 10px; 
+      color: $coloramarillo; 
       font-family: 'Nunito', sans-serif
-    }     
-  
-  
-  
-  .footerIndex {
+  }
+
+  .otrosServicios {
+
+      padding: 3%;
+      margin: 5px;
+      border: none;
+      font-size: 45px;
+      text-align: center;
+      text-decoration: none;
+      color: $coloramarillo; 
+      font-family: 'Nunito', sans-serif
+
+  }
+ 
+.footerIndex {
     grid-area: footer; 
   }
   
@@ -113,7 +171,10 @@
     color: $coloramarillo; 
     font-family: 'Nunito', sans-serif
   }
-  
+
+
+
+
   
   
   

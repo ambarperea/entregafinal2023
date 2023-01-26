@@ -14,14 +14,17 @@
     color: #12A6A6;
     text-align: center;
     font-weight: normal;
-    font-size: 50px;
-    margin: 25px; }
-  .bodySinAside h2 {
+    font-size: 80px;
+    margin: 25px;
+    font-family: 'Nunito', sans-serif; }
+  .bodySinAside .inscripciones {
+    background-color: #84428C;
     color: #F2B705;
     text-align: center;
     font-weight: normal;
     font-size: 25px;
-    margin: 20px; }
+    margin: 20px;
+    font-family: 'Nunito', sans-serif; }
 
 @media (max-width: 768px) {
   .bodySinAside {
@@ -31,26 +34,28 @@
 .formulario {
   padding: 30px;
   background-color: #12A6A6;
-  max-width: 800px;
-  height: 600px;
+  max-width: 900px;
+  height: 900px;
   margin: 10px auto;
   display: grid;
   gap: 10px;
+  font-family: 'Nunito', sans-serif;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 80px;
-  grid-template-areas: "nombre      apellido" "dni         telefono" "genero      genero" "mensaje     mensaje" "condiciones ..." "btn         btn"; }
+  grid-template-areas: "nombre      apellido" "dni         telefono" "genero      genero" "mensaje     mensaje" "condiciones condiciones" "btn         btn"; }
 
 @media (max-width: 768px) {
   .formulario {
+    font-family: 'Nunito', sans-serif;
     padding: 30px;
     background-color: #12A6A6;
     max-width: 680px;
-    height: 800px;
+    height: 1100px;
     margin: 10px auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 80px;
+    grid-template-rows: 1fr 100px;
     grid-template-areas: "nombre"       "apellido" "dni"          "telefono" "genero"       "mensaje" "condiciones" "btn"; } }
 
 .formulario label:nth-child(1) {
@@ -81,16 +86,19 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #F2B705; }
+  padding: 10px;
+  color: #F2B705;
+  font-family: 'Nunito', sans-serif; }
   .formulario label > label > input {
-    background-color: transparent;
+    background-color: white;
     border-bottom: 1px solid white; }
 
 .genero {
   width: 280px;
   padding: 10px;
-  border: 2px solid;
-  border-color: #F2B705; }
+  margin: 10px;
+  color: #F2B705;
+  font-family: 'Nunito', sans-serif; }
 
 .redondeado {
   width: 100px;
@@ -106,24 +114,30 @@
 
 .completar {
   width: 200px;
-  background-color: #12A6A6; }
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif; }
 
 .completar2 {
   width: 200px;
-  background-color: #12A6A6; }
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif; }
 
 .completar3 {
   width: 200px;
-  background-color: #12A6A6; }
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif; }
 
 .completar4 {
   width: 200px;
-  background-color: #12A6A6; }
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif; }
 
 .textarea {
-  width: 200px;
+  width: 750px;
   height: 200px;
-  background-color: #F2B705; }
+  background-color: #F2B705;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff; }
 
 * {
   margin: 0;
@@ -298,35 +312,31 @@
   .headerturnos {
     height: 200px; } }
 
-.bodyturnos .turnos {
-  grid-area: main;
-  width: 700px;
-  margin: 20px auto;
-  padding: 10px;
-  height: 900px;
-  background-color: #12A6A6;
-  font-size: 15px;
-  color: #F2B705;
-  font-family: 'Nunito', sans-serif; }
-
-.bodyturnos .navegador {
-  grid-area: header; }
-
-.bodyturnos .mainturnos {
-  grid-area: main; }
-
-.bodyturnos .footerTurnos {
-  grid-area: footer;
-  width: 100%;
-  padding: 2px;
-  margin: 3px; }
-
 .bodyturnos {
   display: grid;
   background-color: #84428C;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px  1500px 100px;
+  grid-template-rows: 400px  1300px 100px;
   grid-template-areas: "header header header  header" "main    main   main   main" "footer  footer footer footer"; }
+  .bodyturnos .headerturnos {
+    grid-area: header; }
+  .bodyturnos .turnos {
+    grid-area: main;
+    width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+    height: 1050px;
+    background-color: #12A6A6;
+    font-size: 15px;
+    color: #F2B705;
+    font-family: 'Nunito', sans-serif; }
+  .bodyturnos .navegador {
+    grid-area: header; }
+  .bodyturnos .footerTurnos {
+    grid-area: footer;
+    width: 100%;
+    padding: 2px;
+    margin: 3px; }
 
 @media (max-width: 768px) {
   .bodyturnos {
@@ -484,15 +494,23 @@
 .bodyindex {
   background-color: #84428C;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 450px 1fr 100px;
-  grid-template-areas: "header header header header" "main    main   main   aside" "footer  footer footer footer"; }
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 450px 1100px 475px 100px;
+  grid-template-areas: "header header header header" "main  main   main   main" "aside aside  aside  asie" "footer  footer footer footer"; }
+  .bodyindex .navegador {
+    grid-area: header; }
+  .bodyindex .headerIndex {
+    grid-area: header; }
+  .bodyindex .mainIndex {
+    grid-area: main; }
+  .bodyindex .footer {
+    grid-area: footer; }
 
 @media (max-width: 768px) {
   .bodyindex {
     background-color: #84428C;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 450px auto auto 100px;
     grid-template-areas: "header header header header" "main   main   main   main" "aside  aside  aside  aside" "footer footer footer footer"; } }
 
@@ -500,13 +518,27 @@ h1 {
   color: #12A6A6;
   text-align: center;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 80px;
   margin: 25px;
   font-family: 'Nunito', sans-serif; }
 
 .mainIndex {
   grid-area: main;
   margin-top: 80px; }
+  .mainIndex .titulo__conocenos {
+    margin: 25px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    color: #12A6A6; }
+  .mainIndex .descrip__conocenos {
+    margin: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    color: #F2B705; }
 
 h2 {
   color: #84428C;
@@ -516,15 +548,24 @@ h2 {
   margin: 20px;
   font-family: 'Nunito', sans-serif; }
 
-.agendar {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
+h4 {
+  padding: 3%;
+  margin: 5px;
   border: none;
-  border-radius: 5px;
-  color: #84428C;
+  font-size: 50px;
+  text-align: center;
   text-decoration: none;
-  font-size: 10px;
+  color: #F2B705;
+  font-family: 'Nunito', sans-serif; }
+
+.otrosServicios {
+  padding: 3%;
+  margin: 5px;
+  border: none;
+  font-size: 45px;
+  text-align: center;
+  text-decoration: none;
+  color: #F2B705;
   font-family: 'Nunito', sans-serif; }
 
 .footerIndex {
